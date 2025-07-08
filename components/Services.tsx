@@ -5,56 +5,56 @@ import { HeartPulse, Brain, HeartCrack, AlertTriangle, HelpCircle, SmilePlus, Ac
 export default function Services() {
   const issues = [
     {
-      title: "Anxiety",
-      description: "Are negative thoughts taking you away from reality? Talk to renowned experts and feel better right away.",
+      title: "Worry & Anxiety",
+      description: "Is your mind troubled by worry or fear? Find peace through prayer, biblical wisdom, and support from Ethiopian Christian mentors.",
       icon: <AlertTriangle className="h-6 w-6 text-fuchsia-500" />,
       href: "/anxiety"
     },
     {
-      title: "Stress",
-      description: "Has stress made you stop living your life to the fullest? Connect with top professionals and regain joy today.",
+      title: "Stress & Burnout",
+      description: "Are you feeling overwhelmed by school, work, or life? Connect with faith-filled counselors who understand Ethiopian challenges.",
       icon: <Activity className="h-6 w-6 text-fuchsia-500" />,
       href: "/stress"
     },
     {
-      title: "Depression",
-      description: "Feeling persistently sad or empty? Our specialists can help you find light again.",
+      title: "Sadness & Depression",
+      description: "Feeling persistently sad or empty? Our Christian specialists can help you find hope and light again.",
       icon: <HeartCrack className="h-6 w-6 text-fuchsia-500" />,
       href: "/depression"
     },
     {
-      title: "Trauma",
-      description: "Struggling with past experiences? Healing begins with compassionate professional support.",
+      title: "Past Trauma",
+      description: "Struggling with painful memories or past experiences? Healing begins with compassionate, faith-based support.",
       icon: <ShieldAlert className="h-6 w-6 text-fuchsia-500" />,
       href: "/trauma"
     },
     {
-      title: "Relationship Issues",
-      description: "Challenges in personal connections? Learn healthy ways to communicate and relate.",
+      title: "Relationship Challenges",
+      description: "Facing difficulties in family, friendship, or dating? Learn healthy, biblical ways to communicate and relate.",
       icon: <HeartPulse className="h-6 w-6 text-fuchsia-500" />,
       href: "/relationships"
     },
     {
-      title: "Self-Esteem",
-      description: "Doubting your self-worth? Build confidence with our positive psychology approaches.",
+      title: "Self-Esteem & Identity",
+      description: "Doubting your worth? Discover your true value as a child of God and build confidence in Christ.",
       icon: <SmilePlus className="h-6 w-6 text-fuchsia-500" />,
       href: "/self-esteem"
     },
     {
       title: "Life Transitions",
-      description: "Struggling with change? Navigate life's transitions with expert guidance.",
+      description: "Struggling with change—graduation, moving, or new seasons? Navigate life's transitions with biblical guidance.",
       icon: <HelpCircle className="h-6 w-6 text-fuchsia-500" />,
       href: "/transitions"
     },
     {
       title: "Grief & Loss",
-      description: "Processing a significant loss? Find compassionate support for your healing journey.",
+      description: "Have you lost a loved one? Find comfort and hope in Christ with compassionate support for your healing journey.",
       icon: <HeartCrack className="h-6 w-6 text-fuchsia-500" />,
       href: "/grief"
     },
     {
-      title: "Addiction",
-      description: "Seeking freedom from addictive behaviors? Discover sustainable recovery methods.",
+      title: "Addiction & Habits",
+      description: "Seeking freedom from harmful habits? Discover lasting change through prayer, accountability, and Christian community.",
       icon: <ShieldAlert className="h-6 w-6 text-fuchsia-500" />,
       href: "/addiction"
     }
