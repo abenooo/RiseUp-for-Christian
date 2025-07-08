@@ -16,13 +16,13 @@ export async function generateMetadata({ params }: TopicPageProps) {
 
   if (!topic) {
     return {
-      title: "Topic Not Found | FaithConnect Therapy",
+      title: "Topic Not Found | FaithConnect Ethiopia",
       description: "The requested topic could not be found.",
     }
   }
 
   return {
-    title: `${topic.title} | FaithConnect Therapy`,
+    title: `${topic.title} | FaithConnect Ethiopia`,
     description: topic.description,
   }
 }
@@ -75,32 +75,27 @@ export default async function TopicPage({ params }: TopicPageProps) {
         </div>
       </section>
 
-      {/* Content Section - Placeholder for actual content */}
+      {/* Content Section - Faith-based placeholder */}
       <section className="max-w-4xl mx-auto px-5 py-16 text-gray-500">
         <div className="prose prose-lg max-w-none">
           <h2>Understanding {topic.title}</h2>
           <p>
-            This is where detailed content about {topic.title.toLowerCase()} would go. This could include symptoms,
-            causes, treatment options, and self-help strategies. The content would be comprehensive and evidence-based,
-            providing valuable information to readers seeking help with {topic.title.toLowerCase()}.
+            Here you'll find Christian wisdom and practical advice about {topic.title.toLowerCase()}—including its challenges, biblical encouragement, and steps for healing and growth in the Ethiopian context.
           </p>
 
-          <h2>How We Can Help</h2>
+          <h2>FaithConnect Ethiopia Can Help</h2>
           <p>
-            At FaithConnect Therapy, we offer specialized support for individuals dealing with {topic.title.toLowerCase()}.
-            Our experienced therapists and coaches use evidence-based approaches to help you develop coping strategies,
-            build resilience, and improve your overall well-being.
+            Our mentors and counselors offer support rooted in faith and Ethiopian values. Whether you need prayer, biblical guidance, or a listening ear, we are here to walk with you on your journey.
           </p>
 
           <h2>Next Steps</h2>
           <p>
-            If you're struggling with {topic.title.toLowerCase()}, consider reaching out to one of our specialists for a
-            consultation. We offer both in-person and online sessions to accommodate your needs and preferences.
+            If you're struggling with {topic.title.toLowerCase()}, consider reaching out to one of our Christian mentors for prayer or a conversation. We offer both in-person and online support to serve you wherever you are in Ethiopia.
           </p>
 
           <div className="my-8 flex justify-center">
             <Button className="bg-fuchsia-500 hover:bg-fuchsia-600 text-white rounded-full px-8 py-6 h-auto text-lg">
-              Book a Consultation
+              Connect with a Mentor
             </Button>
           </div>
         </div>

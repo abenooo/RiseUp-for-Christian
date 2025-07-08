@@ -2,8 +2,8 @@ import { allTopics } from "@/data/topics"
 import { TopicsGrid } from "@/components/topics-grid"
 
 export const metadata = {
-  title: "Mental Health Topics | FaithConnect Therapy",
-  description: "Explore our comprehensive collection of mental health, therapy, and coaching topics.",
+  title: "Faith & Well-being Topics | FaithConnect Ethiopia",
+  description: "Explore our collection of Christian faith, well-being, and life topics for Ethiopians.",
 }
 
 export default function TopicsPage() {
@@ -15,10 +15,11 @@ export default function TopicsPage() {
       {/* Hero Section */}
       <section className="w-full bg-gradient-to-r from-fuchsia-50 to-fuchsia-100 py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-5 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-[#1A1A1A] mb-4">Mental Health Topics</h1>
+          <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-[#1A1A1A] mb-4">
+            Ethiopian Christian Life & Well-being Topics
+          </h1>
           <p className="text-lg text-[#4A4A4A] max-w-3xl mx-auto">
-            Explore our comprehensive collection of resources on mental health, therapy, and coaching to support your
-            well-being journey.
+            Discover resources on faith, mental health, relationships, and personal growth—rooted in Ethiopian Christian values and culture.
           </p>
         </div>
       </section>

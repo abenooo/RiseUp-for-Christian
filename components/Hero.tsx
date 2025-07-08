@@ -141,7 +141,7 @@ export default function Home() {
             <div className="absolute right-0 md:right-0 bottom-1/3 max-w-[180px] hidden sm:block z-20">
               <div className="relative">
                 <div className="bg-[#F97E5A] text-white p-2 rounded-xl shadow-md w-full">
-                  <p className="text-xs md:text-sm">That's okay. What happened?</p>
+                  <p className="text-xs md:text-sm">That's okay. What happened? We are here to help you.</p>
                 </div>
                 {/* Connector */}
                 <div className="absolute -left-4 top-1/2 transform -translate-y-1/2 w-4 h-4 rotate-45 bg-[#F97E5A]"></div>

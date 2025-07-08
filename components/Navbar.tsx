@@ -125,106 +125,65 @@ function Navbar() {
                         href="/topics/anxiety"
                         className="block px-3 py-1.5 text-sm hover:bg-zinc-700 rounded transition-colors whitespace-nowrap"
                       >
-                        Anxiety
+                        Worry & Anxiety
                       </Link>
                       <Link
                         href="/topics/stress"
                         className="block px-3 py-1.5 text-sm hover:bg-zinc-700 rounded transition-colors whitespace-nowrap"
                       >
-                        Stress
+                        Stress & Burnout
                       </Link>
                       <Link
-                        href="/topics/sadness"
+                        href="/topics/depression"
                         className="block px-3 py-1.5 text-sm hover:bg-zinc-700 rounded transition-colors whitespace-nowrap"
                       >
-                        Sadness
+                        Sadness & Depression
                       </Link>
                       <Link
-                        href="/topics/confusion"
+                        href="/topics/trauma"
                         className="block px-3 py-1.5 text-sm hover:bg-zinc-700 rounded transition-colors whitespace-nowrap"
                       >
-                        Confusion
-                      </Link>
-                      <Link
-                        href="/topics/feeling-lost"
-                        className="block px-3 py-1.5 text-sm hover:bg-zinc-700 rounded transition-colors whitespace-nowrap"
-                      >
-                        Feeling Lost
-                      </Link>
-                      <Link
-                        href="/topics/feeling-alone"
-                        className="block px-3 py-1.5 text-sm hover:bg-zinc-700 rounded transition-colors whitespace-nowrap"
-                      >
-                        Feeling Alone
+                        Past Trauma
                       </Link>
                     </div>
 
                     {/* Column 2 */}
                     <div className="space-y-1">
                       <Link
-                        href="/topics/trauma"
+                        href="/topics/relationships"
                         className="block px-3 py-1.5 text-sm hover:bg-zinc-700 rounded transition-colors whitespace-nowrap"
                       >
-                        Trauma
+                        Relationship Challenges
                       </Link>
                       <Link
-                        href="/topics/burnout"
+                        href="/topics/self-esteem"
                         className="block px-3 py-1.5 text-sm hover:bg-zinc-700 rounded transition-colors whitespace-nowrap"
                       >
-                        Burnout
+                        Self-Esteem & Identity
                       </Link>
                       <Link
-                        href="/topics/societal-pressure"
+                        href="/topics/transitions"
                         className="block px-3 py-1.5 text-sm hover:bg-zinc-700 rounded transition-colors whitespace-nowrap"
                       >
-                        Societal Pressure
+                        Life Transitions
                       </Link>
                       <Link
-                        href="/topics/inferiority-complex"
+                        href="/topics/grief"
                         className="block px-3 py-1.5 text-sm hover:bg-zinc-700 rounded transition-colors whitespace-nowrap"
                       >
-                        Inferiority Complex
-                      </Link>
-                      <Link
-                        href="/topics/exam-anxiety"
-                        className="block px-3 py-1.5 text-sm hover:bg-zinc-700 rounded transition-colors whitespace-nowrap"
-                      >
-                        Exam Anxiety
+                        Grief & Loss
                       </Link>
                     </div>
 
                     {/* Column 3 */}
                     <div className="space-y-1">
                       <Link
-                        href="/topics/panic-attacks"
+                        href="/topics/addiction"
                         className="block px-3 py-1.5 text-sm hover:bg-zinc-700 rounded transition-colors whitespace-nowrap"
                       >
-                        Panic Attacks
+                        Addiction & Habits
                       </Link>
-                      <Link
-                        href="/topics/peer-pressure"
-                        className="block px-3 py-1.5 text-sm hover:bg-zinc-700 rounded transition-colors whitespace-nowrap"
-                      >
-                        Peer Pressure
-                      </Link>
-                      <Link
-                        href="/topics/toxic-workplace"
-                        className="block px-3 py-1.5 text-sm hover:bg-zinc-700 rounded transition-colors whitespace-nowrap"
-                      >
-                        Toxic Workplace
-                      </Link>
-                      <Link
-                        href="/topics/imposter-syndrome"
-                        className="block px-3 py-1.5 text-sm hover:bg-zinc-700 rounded transition-colors whitespace-nowrap"
-                      >
-                        Imposter Syndrome
-                      </Link>
-                      <Link
-                        href="/topics/lack-of-confidence"
-                        className="block px-3 py-1.5 text-sm hover:bg-zinc-700 rounded transition-colors whitespace-nowrap"
-                      >
-                        Lack Of Confidence
-                      </Link>
+                      {/* You can add more Ethiopian Christian–relevant topics here if needed */}
                     </div>
                   </div>
                 </div>
@@ -421,37 +380,25 @@ function Navbar() {
                           href="/topics/anxiety"
                           className="block py-1.5 text-sm text-zinc-300"
                         >
-                          Anxiety
+                          Worry & Anxiety
                         </Link>
                         <Link
                           href="/topics/stress"
                           className="block py-1.5 text-sm text-zinc-300"
                         >
-                          Stress
+                          Stress & Burnout
                         </Link>
                         <Link
-                          href="/topics/sadness"
+                          href="/topics/depression"
                           className="block py-1.5 text-sm text-zinc-300"
                         >
-                          Sadness
+                          Sadness & Depression
                         </Link>
                         <Link
                           href="/topics/trauma"
                           className="block py-1.5 text-sm text-zinc-300"
                         >
-                          Trauma
-                        </Link>
-                        <Link
-                          href="/topics/burnout"
-                          className="block py-1.5 text-sm text-zinc-300"
-                        >
-                          Burnout
-                        </Link>
-                        <Link
-                          href="/topics/confusion"
-                          className="block py-1.5 text-sm text-zinc-300"
-                        >
-                          Confusion
+                          Past Trauma
                         </Link>
                       </div>
                       <Link
