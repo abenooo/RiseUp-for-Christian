@@ -1,302 +1,237 @@
-export type ExpertType = {
+export interface ExpertType {
   id: string;
   name: string;
-  image: string;
   title: string;
-  categories: string[];
-  specialties: string[];
+  image: string;
   rating: number;
   reviewCount: number;
-  pricePerHour: number;
+  pricePerHour: 0;
+  categories: string[];
+  specialties: string[];
   sessionLength: number;
-  experience: number;
-  location: string;
-  availableToday: boolean;
-  verified: boolean;
-  sessionTypes: ("video" | "chat" | "in-person")[];
   successRate: number;
-  bio?: string;
-  credentials?: string[];
-};
+  location: string;
+  experience: number;
+  verified: boolean;
+  availableToday: boolean;
+  sessionTypes: ('video' | 'chat' | 'in-person')[];
+  bio: string;
+  testimonials: {
+    name: string;
+    text: string;
+    rating: number;
+  }[];
+}
 
-// Featured Experts
-export const featuredExpertsData: ExpertType[] = [
+export const expertData: ExpertType[] = [
   {
-    id: "exp-001",
-    name: "Dr. Michael Chen",
-    image: "https://images.pexels.com/photos/5952645/pexels-photo-5952645.jpeg",
-    title: "Licensed Therapist",
-    categories: ["therapist", "counselor"],
-    specialties: ["Anxiety", "Depression", "Stress Management", "Trauma"],
+    id: '1',
+    name: 'Pastor Dawit Kebede',
+    title: 'Senior Pastor & Spiritual Director',
+    image: 'https://randomuser.me/api/portraits/men/32.jpg',
     rating: 4.9,
     reviewCount: 127,
-    pricePerHour: 120,
-    sessionLength: 50,
-    experience: 12,
-    location: "New York, USA",
-    availableToday: true,
-    verified: true,
-    sessionTypes: ["video", "chat", "in-person"],
-    successRate: 94,
-    bio: "Dr. Chen has over 12 years of experience helping individuals overcome anxiety, depression, and stress. His approach combines cognitive-behavioral therapy with mindfulness techniques to provide holistic care.",
-    credentials: ["Ph.D. in Clinical Psychology", "Licensed Psychotherapist", "Certified in CBT"]
-  },
-  {
-    id: "exp-002",
-    name: "Dr. Lisa Peterson",
-    image: "https://images.pexels.com/photos/5490235/pexels-photo-5490235.jpeg",
-    title: "Clinical Psychologist",
-    categories: ["psychologist", "therapist"],
-    specialties: ["Depression", "Anxiety", "Relationships", "Self-Esteem"],
-    rating: 4.8,
-    reviewCount: 98,
-    pricePerHour: 140,
-    sessionLength: 50,
+    pricePerHour: 0,
+    categories: ['Pastoral Care', 'Discipleship'],
+    specialties: ['Prayer Life', 'Biblical Counseling', 'Leadership Development'],
+    sessionLength: 60,
+    successRate: 96,
+    location: 'Addis Ababa, Ethiopia',
     experience: 15,
-    location: "Los Angeles, USA",
-    availableToday: false,
     verified: true,
-    sessionTypes: ["video", "chat"],
-    successRate: 92,
-    bio: "Dr. Peterson specializes in treating depression and anxiety with a compassionate, evidence-based approach. She creates a safe space for clients to explore their emotions and develop effective coping strategies."
-  },
-  {
-    id: "exp-003",
-    name: "Mark Williams",
-    image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg",
-    title: "Life Coach",
-    categories: ["coach"],
-    specialties: ["Career Transition", "Work-Life Balance", "Goal Setting", "Motivation"],
-    rating: 4.7,
-    reviewCount: 65,
-    pricePerHour: 90,
-    sessionLength: 60,
-    experience: 8,
-    location: "Chicago, USA",
     availableToday: true,
-    verified: true,
-    sessionTypes: ["video", "chat"],
-    successRate: 89
+    sessionTypes: ['video', 'chat'],
+    bio: 'Helping believers in Ethiopia grow deeper in their relationship with Christ through prayer, scripture study, and spiritual disciplines.',
+    testimonials: [
+      {
+        name: 'Mekdes T.',
+        text: 'Pastor Dawit helped me develop a consistent prayer life that has transformed my walk with God.',
+        rating: 5
+      }
+    ]
   },
   {
-    id: "exp-004",
-    name: "Dr. Sophia Rodriguez",
-    image: "https://images.pexels.com/photos/5325840/pexels-photo-5325840.jpeg",
-    title: "Relationship Coach",
-    categories: ["relationship", "coach"],
-    specialties: ["Marriage Counseling", "Communication Skills", "Conflict Resolution"],
-    rating: 4.9,
-    reviewCount: 112,
-    pricePerHour: 130,
-    sessionLength: 60,
-    experience: 10,
-    location: "Miami, USA",
-    availableToday: true,
-    verified: true,
-    sessionTypes: ["video", "in-person"],
-    successRate: 95
-  },
-  {
-    id: "exp-005",
-    name: "Dr. James Wilson",
-    image: "https://images.pexels.com/photos/6129507/pexels-photo-6129507.jpeg",
-    title: "Counseling Psychologist",
-    categories: ["psychologist", "counselor"],
-    specialties: ["Trauma", "Grief", "PTSD", "Anxiety"],
+    id: '2',
+    name: 'Dr. Selamawit Tesfaye',
+    title: 'Christian Counselor & Author',
+    image: 'https://randomuser.me/api/portraits/women/44.jpg',
     rating: 4.8,
-    reviewCount: 87,
-    pricePerHour: 150,
+    reviewCount: 89,
+    pricePerHour: 0,
+    categories: ['Christian Counseling', 'Women\'s Ministry'],
+    specialties: ['Marriage & Family', 'Grief Support', 'Identity in Christ'],
     sessionLength: 50,
-    experience: 20,
-    location: "Boston, USA",
-    availableToday: false,
+    successRate: 94,
+    location: 'Bahir Dar, Ethiopia',
+    experience: 12,
     verified: true,
-    sessionTypes: ["video", "in-person"],
-    successRate: 93
+    availableToday: false,
+    sessionTypes: ['video', 'chat', 'in-person'],
+    bio: 'Combining biblical wisdom with professional counseling to help Ethiopian families find healing and hope in Christ.',
+    testimonials: [
+      {
+        name: 'Samuel A.',
+        text: 'Dr. Selamawit guided our marriage through a difficult season with grace and biblical wisdom.',
+        rating: 5
+      }
+    ]
+  },
+  {
+    id: '3',
+    name: 'Elder Getachew Alemu',
+    title: 'Youth Pastor & Discipleship Coach',
+    image: 'https://randomuser.me/api/portraits/men/45.jpg',
+    rating: 4.7,
+    reviewCount: 156,
+    pricePerHour: 0,
+    categories: ['Youth Ministry', 'Discipleship'],
+    specialties: ['Teen Mentorship', 'Bible Study', 'Spiritual Formation'],
+    sessionLength: 45,
+    successRate: 92,
+    location: 'Hawassa, Ethiopia',
+    experience: 8,
+    verified: true,
+    availableToday: true,
+    sessionTypes: ['video', 'chat'],
+    bio: 'Dedicated to helping young Ethiopians discover their purpose in Christ and develop strong spiritual foundations.',
+    testimonials: [
+      {
+        name: 'Hanna L.',
+        text: 'Elder Getachew helped my teenager navigate faith questions with patience and biblical truth.',
+        rating: 5
+      }
+    ]
+  },
+  {
+    id: '4',
+    name: 'Sister Muluwork Abebe',
+    title: 'Spiritual Director & Prayer Minister',
+    image: 'https://randomuser.me/api/portraits/women/47.jpg',
+    rating: 4.9,
+    reviewCount: 203,
+    pricePerHour: 0,
+    categories: ['Spiritual Direction', 'Prayer Ministry'],
+    specialties: ['Contemplative Prayer', 'Spiritual Discernment', 'Retreat Guidance'],
+    sessionLength: 60,
+    successRate: 98,
+    location: 'Gondar, Ethiopia',
+    experience: 20,
+    verified: true,
+    availableToday: true,
+    sessionTypes: ['video', 'chat', 'in-person'],
+    bio: 'Guiding souls in Ethiopia into deeper intimacy with God through contemplative prayer and spiritual direction.',
+    testimonials: [
+      {
+        name: 'Abebe K.',
+        text: 'Sister Muluwork helped me discover the beauty of contemplative prayer and silence with God.',
+        rating: 5
+      }
+    ]
+  },
+  {
+    id: '5',
+    name: 'Rev. Daniel Tesfaye',
+    title: 'Missionary & Cross-Cultural Minister',
+    image: 'https://randomuser.me/api/portraits/men/48.jpg',
+    rating: 4.8,
+    reviewCount: 94,
+    pricePerHour: 0,
+    categories: ['Missions', 'Cross-Cultural Ministry'],
+    specialties: ['Evangelism', 'Cultural Sensitivity', 'Ministry Training'],
+    sessionLength: 55,
+    successRate: 93,
+    location: 'Mekelle, Ethiopia',
+    experience: 18,
+    verified: true,
+    availableToday: false,
+    sessionTypes: ['video', 'chat'],
+    bio: 'Passionate about equipping believers for effective cross-cultural ministry and evangelism.',
+    testimonials: [
+      {
+        name: 'Hirut S.',
+        text: 'Rev. Daniel prepared me beautifully for my mission trip with practical and spiritual guidance.',
+        rating: 5
+      }
+    ]
+  },
+  {
+    id: '6',
+    name: 'Dr. Ruth Alemayehu',
+    title: 'Biblical Scholar & Teacher',
+    image: 'https://randomuser.me/api/portraits/women/49.jpg',
+    rating: 4.9,
+    reviewCount: 167,
+    pricePerHour: 0,
+    categories: ['Biblical Studies', 'Teaching'],
+    specialties: ['Old Testament', 'Hebrew Language', 'Biblical Archaeology'],
+    sessionLength: 60,
+    successRate: 97,
+    location: 'Dire Dawa, Ethiopia',
+    experience: 25,
+    verified: true,
+    availableToday: true,
+    sessionTypes: ['video', 'chat'],
+    bio: 'Bringing the ancient world of Scripture to life through scholarly insight and passionate teaching.',
+    testimonials: [
+      {
+        name: 'Michael T.',
+        text: 'Dr. Ruth opened up the Old Testament in ways I never imagined possible.',
+        rating: 5
+      }
+    ]
+  },
+  {
+    id: '7',
+    name: 'Pastor Sara Bekele',
+    title: 'Women\'s Ministry Leader',
+    image: 'https://randomuser.me/api/portraits/women/50.jpg',
+    rating: 4.8,
+    reviewCount: 134,
+    pricePerHour: 0,
+    categories: ['Women\'s Ministry', 'Pastoral Care'],
+    specialties: ['Women\'s Leadership', 'Life Transitions', 'Biblical Womanhood'],
+    sessionLength: 50,
+    successRate: 95,
+    location: 'Jimma, Ethiopia',
+    experience: 11,
+    verified: true,
+    availableToday: true,
+    sessionTypes: ['video', 'chat', 'in-person'],
+    bio: 'Empowering women to discover their God-given purpose and walk confidently in their calling.',
+    testimonials: [
+      {
+        name: 'Lisa K.',
+        text: 'Pastor Sara helped me navigate a difficult life transition with wisdom and compassion.',
+        rating: 5
+      }
+    ]
+  },
+  {
+    id: '8',
+    name: 'Dr. Markos Fikru',
+    title: 'Marriage & Family Counselor',
+    image: 'https://randomuser.me/api/portraits/men/51.jpg',
+    rating: 4.9,
+    reviewCount: 178,
+    pricePerHour: 0,
+    categories: ['Marriage & Family', 'Christian Counseling'],
+    specialties: ['Couples Therapy', 'Family Dynamics', 'Conflict Resolution'],
+    sessionLength: 60,
+    successRate: 97,
+    location: 'Adama, Ethiopia',
+    experience: 16,
+    verified: true,
+    availableToday: false,
+    sessionTypes: ['video', 'in-person'],
+    bio: 'Helping couples and families build strong, Christ-centered relationships through biblical counseling principles.',
+    testimonials: [
+      {
+        name: 'John & Mary D.',
+        text: 'Dr. Markos saved our marriage and taught us how to love each other the way Christ loves us.',
+        rating: 5
+      }
+    ]
   }
 ];
 
-// All Experts
-export const expertData: ExpertType[] = [
-  ...featuredExpertsData,
-  {
-    id: "exp-006",
-    name: "Emily Johnson",
-    image: "https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg",
-    title: "Mindfulness Coach",
-    categories: ["coach"],
-    specialties: ["Mindfulness", "Meditation", "Stress Reduction", "Anxiety"],
-    rating: 4.6,
-    reviewCount: 42,
-    pricePerHour: 85,
-    sessionLength: 45,
-    experience: 6,
-    location: "Seattle, USA",
-    availableToday: true,
-    verified: true,
-    sessionTypes: ["video", "chat"],
-    successRate: 87
-  },
-  {
-    id: "exp-007",
-    name: "Dr. Robert Kim",
-    image: "https://images.pexels.com/photos/6626903/pexels-photo-6626903.jpeg",
-    title: "Psychiatrist",
-    categories: ["psychiatrist"],
-    specialties: ["Depression", "Anxiety Disorders", "Bipolar Disorder", "Medication Management"],
-    rating: 4.9,
-    reviewCount: 76,
-    pricePerHour: 200,
-    sessionLength: 30,
-    experience: 15,
-    location: "San Francisco, USA",
-    availableToday: false,
-    verified: true,
-    sessionTypes: ["video"],
-    successRate: 91
-  },
-  {
-    id: "exp-008",
-    name: "Sarah Thompson",
-    image: "https://images.pexels.com/photos/6234600/pexels-photo-6234600.jpeg",
-    title: "Career Counselor",
-    categories: ["counselor", "coach"],
-    specialties: ["Career Planning", "Job Search Strategy", "Work Stress", "Career Transitions"],
-    rating: 4.7,
-    reviewCount: 53,
-    pricePerHour: 95,
-    sessionLength: 60,
-    experience: 9,
-    location: "Denver, USA",
-    availableToday: true,
-    verified: true,
-    sessionTypes: ["video", "chat"],
-    successRate: 88
-  },
-  {
-    id: "exp-009",
-    name: "Dr. David Martinez",
-    image: "https://images.pexels.com/photos/5327656/pexels-photo-5327656.jpeg",
-    title: "Family Therapist",
-    categories: ["therapist"],
-    specialties: ["Family Dynamics", "Parenting", "Adolescent Issues", "Blended Families"],
-    rating: 4.8,
-    reviewCount: 89,
-    pricePerHour: 125,
-    sessionLength: 60,
-    experience: 14,
-    location: "Austin, USA",
-    availableToday: false,
-    verified: true,
-    sessionTypes: ["video", "in-person"],
-    successRate: 90
-  },
-  {
-    id: "exp-010",
-    name: "Rebecca Clark",
-    image: "https://images.pexels.com/photos/4498220/pexels-photo-4498220.jpeg",
-    title: "Grief Counselor",
-    categories: ["counselor", "therapist"],
-    specialties: ["Grief & Loss", "Bereavement", "Life Transitions", "Emotional Processing"],
-    rating: 4.9,
-    reviewCount: 61,
-    pricePerHour: 110,
-    sessionLength: 50,
-    experience: 11,
-    location: "Portland, USA",
-    availableToday: true,
-    verified: true,
-    sessionTypes: ["video", "chat", "in-person"],
-    successRate: 94
-  },
-  {
-    id: "exp-011",
-    name: "Alex Turner",
-    image: "https://images.pexels.com/photos/5082976/pexels-photo-5082976.jpeg",
-    title: "Addiction Specialist",
-    categories: ["therapist", "counselor"],
-    specialties: ["Substance Abuse", "Recovery", "Addiction", "Behavioral Addictions"],
-    rating: 4.7,
-    reviewCount: 47,
-    pricePerHour: 115,
-    sessionLength: 50,
-    experience: 8,
-    location: "Philadelphia, USA",
-    availableToday: false,
-    verified: true,
-    sessionTypes: ["video", "in-person"],
-    successRate: 86
-  },
-  {
-    id: "exp-012",
-    name: "Dr. Michelle Lee",
-    image: "https://images.pexels.com/photos/6968631/pexels-photo-6968631.jpeg",
-    title: "Child Psychologist",
-    categories: ["psychologist"],
-    specialties: ["Child Development", "ADHD", "Autism", "Behavioral Issues", "Parenting"],
-    rating: 4.9,
-    reviewCount: 93,
-    pricePerHour: 160,
-    sessionLength: 45,
-    experience: 16,
-    location: "San Diego, USA",
-    availableToday: true,
-    verified: true,
-    sessionTypes: ["video", "in-person"],
-    successRate: 95
-  },
-  {
-    id: "exp-013",
-    name: "Jonathan Patel",
-    image: "https://images.pexels.com/photos/5393594/pexels-photo-5393594.jpeg",
-    title: "Stress Management Coach",
-    categories: ["coach"],
-    specialties: ["Workplace Stress", "Burnout Prevention", "Work-Life Balance", "Anxiety Management"],
-    rating: 4.6,
-    reviewCount: 38,
-    pricePerHour: 80,
-    sessionLength: 45,
-    experience: 7,
-    location: "Atlanta, USA",
-    availableToday: true,
-    verified: true,
-    sessionTypes: ["video", "chat"],
-    successRate: 85
-  },
-  {
-    id: "exp-014",
-    name: "Dr. Emma Wright",
-    image: "https://images.pexels.com/photos/5876695/pexels-photo-5876695.jpeg",
-    title: "Trauma Specialist",
-    categories: ["therapist", "psychologist"],
-    specialties: ["PTSD", "Trauma Recovery", "Anxiety", "Emotional Regulation"],
-    rating: 4.9,
-    reviewCount: 104,
-    pricePerHour: 170,
-    sessionLength: 60,
-    experience: 18,
-    location: "Washington DC, USA",
-    availableToday: false,
-    verified: true,
-    sessionTypes: ["video"],
-    successRate: 94
-  },
-  {
-    id: "exp-015",
-    name: "Dr. Thomas Brown",
-    image: "https://images.pexels.com/photos/6334771/pexels-photo-6334771.jpeg",
-    title: "Couples Therapist",
-    categories: ["therapist", "relationship"],
-    specialties: ["Couples Therapy", "Communication Skills", "Intimacy Issues", "Conflict Resolution"],
-    rating: 4.8,
-    reviewCount: 79,
-    pricePerHour: 145,
-    sessionLength: 60,
-    experience: 13,
-    location: "Dallas, USA",
-    availableToday: true,
-    verified: true,
-    sessionTypes: ["video", "in-person"],
-    successRate: 92
-  }
-];
+export const featuredExpertsData = expertData.slice(0, 4);

@@ -33,15 +33,14 @@ export default function ExpertsList({ experts }: ExpertsListProps) {
     <div id="experts-list">
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-2xl font-semibold text-white">
-          {experts.length} Expert{experts.length !== 1 ? 's' : ''} Available
+          {experts.length} Spiritual Mentor{experts.length !== 1 ? 's' : ''} Available
         </h2>
-        {/* Sort Dropdown can go here */}
       </div>
       
       {experts.length === 0 ? (
         <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-8 text-center">
-          <h3 className="text-xl font-medium text-zinc-300 mb-2">No experts match your filters</h3>
-          <p className="text-zinc-500">Try adjusting your filters or search query to find more results.</p>
+          <h3 className="text-xl font-medium text-zinc-300 mb-2">No mentors match your filters</h3>
+          <p className="text-zinc-500">Try adjusting your filters or search query to find more spiritual mentors.</p>
         </div>
       ) : (
         <>
