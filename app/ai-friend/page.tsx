@@ -20,7 +20,7 @@ export default function AIFriend() {
     {
       id: "1",
       type: "ai",
-      content: "Hi! I'm Rise, your AI friend. I'm here to chat, listen, and support you. How are you feeling today?",
+      content: "Selam! I'm Rise, your Ethiopian Christian AI friend. I'm here to listen, encourage, and pray with you. How are you feeling today? Is there anything on your heart you'd like to share?",
       timestamp: new Date()
     }
   ]);
@@ -54,35 +54,41 @@ export default function AIFriend() {
 
   const simulateAIResponse = async (userMessage: string) => {
     setIsTyping(true);
-    
+
     // Simulate AI thinking time
     await new Promise(resolve => setTimeout(resolve, 1000));
-    
+
     let response = "";
-    
-    // Simple response logic based on user input
-    if (userMessage.toLowerCase().includes("how are you")) {
-      response = "I'm doing well, thank you for asking! More importantly, how are you feeling?";
-    } else if (userMessage.toLowerCase().includes("sad") || userMessage.toLowerCase().includes("depressed")) {
-      response = "I'm sorry to hear that you're feeling this way. Would you like to talk about what's bothering you? Remember, it's okay to not be okay, and seeking help is a sign of strength.";
-    } else if (userMessage.toLowerCase().includes("anxious") || userMessage.toLowerCase().includes("anxiety")) {
-      response = "I understand anxiety can be overwhelming. Let's take a deep breath together. Would you like to try a quick grounding exercise?";
-    } else if (userMessage.toLowerCase().includes("happy") || userMessage.toLowerCase().includes("good")) {
-      response = "That's wonderful to hear! What's been making you feel good lately?";
+    const msg = userMessage.toLowerCase();
+
+    if (msg.includes("how are you")) {
+      response = "Egziabher yimesgen! I'm here for you. How are you feeling today?";
+    } else if (msg.includes("sad") || msg.includes("depressed") || msg.includes("melancholy")) {
+      response = "I'm sorry you're feeling this way. Remember, even King David felt down sometimes (read Psalm 42). Would you like to pray together or talk more about what's on your heart?";
+    } else if (msg.includes("anxious") || msg.includes("anxiety") || msg.includes("worry")) {
+      response = "Anxiety is tough, but you're not alone. Philippians 4:6 reminds us to bring our worries to God in prayer. Would you like a Bible verse or a short prayer for peace?";
+    } else if (msg.includes("happy") || msg.includes("good") || msg.includes("joy")) {
+      response = "That's wonderful! Egziabher yimesgen! What has brought you joy recently? It's good to give thanks for God's blessings.";
+    } else if (msg.includes("pray") || msg.includes("prayer")) {
+      response = "Of course! What would you like to pray about? You can share as much or as little as you want.";
+    } else if (msg.includes("family")) {
+      response = "Family is a blessing and sometimes a challenge. Is there something specific about your family you'd like to talk or pray about?";
+    } else if (msg.includes("church")) {
+      response = "The church is our spiritual family. Are you involved in a local church or youth group? How can I encourage you in your faith journey?";
     } else {
-      response = "Thank you for sharing that with me. Would you like to tell me more about how that makes you feel?";
+      response = "Thank you for sharing. If you want, I can listen, share a Bible verse, or pray with you. How can I support you today?";
     }
-    
+
     setIsTyping(false);
-    
+
     return response;
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!inputValue.trim()) return;
-    
+
     // Add user message
     const userMessage: Message = {
       id: Date.now().toString(),
@@ -90,10 +96,10 @@ export default function AIFriend() {
       content: inputValue.trim(),
       timestamp: new Date()
     };
-    
+
     setMessages(prev => [...prev, userMessage]);
     setInputValue("");
-    
+
     // Get and add AI response
     const aiResponse = await simulateAIResponse(inputValue);
     const aiMessage: Message = {
@@ -102,25 +108,25 @@ export default function AIFriend() {
       content: aiResponse,
       timestamp: new Date()
     };
-    
+
     setMessages(prev => [...prev, aiMessage]);
   };
 
   return (
     <main className="min-h-screen bg-black">
       {/* <Navbar /> */}
-      
+
       <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Header */}
         <div className="text-center mb-8">
           <h1 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-white to-fuchsia-300 bg-clip-text text-transparent">
-            Your AI Friend & Companion
+            Your Ethiopian Christian AI Friend
           </h1>
           <p className="text-zinc-400 max-w-2xl mx-auto">
-            A safe space to share your thoughts and feelings. I'm here to listen, support, and chat with you 24/7.
+            A safe space to share your thoughts and feelings. I'm here to listen, support, and pray with you 24/7.
           </p>
         </div>
-        
+
         {/* Chat Container */}
         <div className="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden">
           {/* Messages Area */}
@@ -149,7 +155,7 @@ export default function AIFriend() {
                         <Bot className="w-5 h-5" />
                       )}
                     </Avatar>
-                    
+
                     <div
                       className={`p-4 rounded-2xl ${
                         message.type === "user"
@@ -162,7 +168,7 @@ export default function AIFriend() {
                   </div>
                 </div>
               ))}
-              
+
               {isTyping && (
                 <div className="flex justify-start">
                   <div className="flex items-start gap-2.5 max-w-[80%]">
@@ -179,11 +185,11 @@ export default function AIFriend() {
                   </div>
                 </div>
               )}
-              
+
               <div ref={messagesEndRef} />
             </div>
           </ScrollArea>
-          
+
           {/* Input Area */}
           <div className="p-4 border-t border-zinc-800">
             <form onSubmit={handleSubmit} className="flex gap-2">
@@ -239,7 +245,7 @@ export default function AIFriend() {
             </form>
           </div>
         </div>
-        
+
         {/* Features */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
           <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-4">
@@ -262,7 +268,7 @@ export default function AIFriend() {
           </div>
         </div>
       </div>
-      
+
       {/* <Footer /> */}
     </main>
   );
