@@ -12,10 +12,10 @@ export default function HowItWorks() {
           <div className="space-y-6">
             <div className="flex items-center gap-4">
               <div className="bg-fuchsia-600 text-white rounded-full h-12 w-12 flex items-center justify-center text-xl font-bold">01</div>
-              <h3 className="text-2xl font-bold">Find Online Experts</h3>
+              <h3 className="text-2xl font-bold">Find Spiritual Mentors</h3>
             </div>
             <p className="text-xl text-zinc-300">
-              Take your pick from our panel of mental health & self-improvement experts
+              Choose from our community of trusted spiritual mentors
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
@@ -23,7 +23,7 @@ export default function HowItWorks() {
               <div className="bg-zinc-800 p-6 rounded-xl border border-zinc-700">
                 <h4 className="font-semibold text-lg mb-4 flex items-center gap-2">
                   <Zap className="h-5 w-5 text-fuchsia-500" />
-                  Health Experts
+                  Bible Teachers
                 </h4>
                 <ul className="space-y-3 text-zinc-300">
                   <li className="flex items-center gap-2">
@@ -45,7 +45,7 @@ export default function HowItWorks() {
               <div className="bg-zinc-800 p-6 rounded-xl border border-zinc-700">
                 <h4 className="font-semibold text-lg mb-4 flex items-center gap-2">
                   <Zap className="h-5 w-5 text-fuchsia-500" />
-                  Wellness Coaches
+                  Prayer Partners
                 </h4>
                 <ul className="space-y-3 text-zinc-300">
                   <li className="flex items-center gap-2">
@@ -81,17 +81,17 @@ export default function HowItWorks() {
           <div className="order-1 lg:order-2 space-y-6">
             <div className="flex items-center gap-4">
               <div className="bg-fuchsia-600 text-white rounded-full h-12 w-12 flex items-center justify-center text-xl font-bold">02</div>
-              <h3 className="text-2xl font-bold">Chat or Call</h3>
+              <h3 className="text-2xl font-bold">Pray or Chat</h3>
             </div>
             <p className="text-xl text-zinc-300">
-              Initiate an instant chat or call with the expert for a price as low as $7/min
+              Start an instant prayer or chat with your mentor—always free
             </p>
             
             <div className="mt-8 space-y-6">
               <div className="bg-zinc-800 p-6 rounded-xl border border-zinc-700">
                 <h4 className="font-semibold text-lg mb-4 flex items-center gap-2">
                   <MessageSquare className="h-5 w-5 text-fuchsia-500" />
-                  Choose Your Expert
+                  Choose Your Mentor
                 </h4>
                 <ul className="space-y-3 text-zinc-300">
                   <li className="flex items-center gap-2">
@@ -112,7 +112,7 @@ export default function HowItWorks() {
               <div className="bg-zinc-800 p-6 rounded-xl border border-zinc-700">
                 <h4 className="font-semibold text-lg mb-4 flex items-center gap-2">
                   <LinkIcon className="h-5 w-5 text-fuchsia-500" />
-                  Connect Instantly
+                  Grow in Faith Together
                 </h4>
                 <ul className="space-y-3 text-zinc-300">
                   <li className="flex items-center gap-2">
@@ -148,7 +148,7 @@ export default function HowItWorks() {
           <div className="space-y-6">
             <div className="flex items-center gap-4">
               <div className="bg-fuchsia-600 text-white rounded-full h-12 w-12 flex items-center justify-center text-xl font-bold">03</div>
-              <h3 className="text-2xl font-bold">Connect Instantly</h3>
+              <h3 className="text-2xl font-bold">Grow in Faith Together</h3>
             </div>
             <p className="text-xl text-zinc-300">
               Share your thoughts, get support, and feel better
@@ -157,7 +157,7 @@ export default function HowItWorks() {
             <div className="bg-zinc-800 p-6 rounded-xl border border-zinc-700 mt-8">
               <h4 className="font-semibold text-lg mb-4 flex items-center gap-2">
                 <LinkIcon className="h-5 w-5 text-fuchsia-500" />
-                Real Support, Real Results
+                Real Fellowship, Deeper Faith
               </h4>
               <ul className="space-y-3 text-zinc-300">
                 <li className="flex items-center gap-2">

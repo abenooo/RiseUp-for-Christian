@@ -7,54 +7,54 @@ import Image from "next/image"
 export default function OurExperts() {
   // All expert categories with icons
   const expertCategories = [
-    { name: "Relationship Coach", icon: <Heart className="h-4 w-4 text-fuchsia-500" /> },
-    { name: "Counselling Psychologist", icon: <UserRound className="h-4 w-4 text-fuchsia-500" /> },
-    { name: "Clinical Psychologist", icon: <BrainCircuit className="h-4 w-4 text-fuchsia-500" /> },
-    { name: "Life Coach", icon: <Zap className="h-4 w-4 text-fuchsia-500" /> },
-    { name: "Therapist", icon: <HeartPulse className="h-4 w-4 text-fuchsia-500" /> },
-    { name: "Positivity Coach", icon: <Sun className="h-4 w-4 text-fuchsia-500" /> },
-    { name: "Career Coach", icon: <Briefcase className="h-4 w-4 text-fuchsia-500" /> },
-    { name: "Sexual Wellness Coach", icon: <Heart className="h-4 w-4 text-fuchsia-500" /> },
-    { name: "Mindset Transformation Coach", icon: <Sparkles className="h-4 w-4 text-fuchsia-500" /> }
+    { name: "Marriage Mentor", icon: <Heart className="h-4 w-4 text-fuchsia-500" /> },
+    { name: "Pastoral Counselor", icon: <UserRound className="h-4 w-4 text-fuchsia-500" /> },
+    { name: "Spiritual Counselor", icon: <BrainCircuit className="h-4 w-4 text-fuchsia-500" /> },
+    { name: "Discipleship Coach", icon: <Zap className="h-4 w-4 text-fuchsia-500" /> },
+    { name: "Prayer Intercessor", icon: <HeartPulse className="h-4 w-4 text-fuchsia-500" /> },
+    { name: "Encouragement Coach", icon: <Sun className="h-4 w-4 text-fuchsia-500" /> },
+    { name: "Vocation Mentor", icon: <Briefcase className="h-4 w-4 text-fuchsia-500" /> },
+    { name: "Purity Mentor", icon: <Heart className="h-4 w-4 text-fuchsia-500" /> },
+    { name: "Renewal Coach", icon: <Sparkles className="h-4 w-4 text-fuchsia-500" /> }
   ]
 
   // Sample data for random experts
   const allExperts = [
-    // Relationship Coaches
-    { id: 1, name: "Kasmase K.", rating: 4.9, role: "Relationship Coach", experience: "8 years", sessions: "1420", image: "/experts/relationship1.jpg", category: "Relationship Coach" },
-    { id: 2, name: "Mulisa T.", rating: 4.7, role: "Relationship Coach", experience: "5 years", sessions: "890", image: "/experts/relationship2.jpg", category: "Relationship Coach" },
+    // Marriage Mentores
+    { id: 1, name: "Kasmase K.", rating: 4.9, role: "Marriage Mentor", experience: "8 years", sessions: "1420", image: "/experts/relationship1.jpg", category: "Marriage Mentor" },
+    { id: 2, name: "Mulisa T.", rating: 4.7, role: "Marriage Mentor", experience: "5 years", sessions: "890", image: "/experts/relationship2.jpg", category: "Marriage Mentor" },
     
-    // Counselling Psychologists
-    { id: 3, name: "Abenezer K.", rating: 4.8, role: "Counselling Psychologist", experience: "6 years", sessions: "1200", image: "/experts/psych1.jpg", category: "Counselling Psychologist" },
-    { id: 4, name: "Rahul K.", rating: 4.6, role: "Counselling Psychologist", experience: "4 years", sessions: "750", image: "/experts/psych2.jpg", category: "Counselling Psychologist" },
+    // Pastoral Counselors
+    { id: 3, name: "Abenezer K.", rating: 4.8, role: "Pastoral Counselor", experience: "6 years", sessions: "1200", image: "/experts/psych1.jpg", category: "Pastoral Counselor" },
+    { id: 4, name: "Rahul K.", rating: 4.6, role: "Pastoral Counselor", experience: "4 years", sessions: "750", image: "/experts/psych2.jpg", category: "Pastoral Counselor" },
     
-    // Clinical Psychologists
-    { id: 5, name: "Dr. Yoohannis Z.", rating: 4.9, role: "Clinical Psychologist", experience: "10 years", sessions: "2100", image: "/experts/clinical1.jpg", category: "Clinical Psychologist" },
-    { id: 6, name: "Dr. Shemlies T.", rating: 4.7, role: "Clinical Psychologist", experience: "7 years", sessions: "1500", image: "/experts/clinical2.jpg", category: "Clinical Psychologist" },
+    // Spiritual Counselors
+    { id: 5, name: "Dr. Yoohannis Z.", rating: 4.9, role: "Spiritual Counselor", experience: "10 years", sessions: "2100", image: "/experts/clinical1.jpg", category: "Spiritual Counselor" },
+    { id: 6, name: "Dr. Shemlies T.", rating: 4.7, role: "Spiritual Counselor", experience: "7 years", sessions: "1500", image: "/experts/clinical2.jpg", category: "Spiritual Counselor" },
     
-    // Life Coaches
-    { id: 7, name: "Mohammed T.", rating: 4.8, role: "Life Coach", experience: "9 years", sessions: "1858", image: "/experts/life1.jpg", category: "Life Coach" },
-    { id: 8, name: "Tilahune K.", rating: 4.5, role: "Life Coach", experience: "3 years", sessions: "420", image: "/experts/life2.jpg", category: "Life Coach" },
+    // Discipleship Coaches
+    { id: 7, name: "Mohammed T.", rating: 4.8, role: "Discipleship Coach", experience: "9 years", sessions: "1858", image: "/experts/life1.jpg", category: "Discipleship Coach" },
+    { id: 8, name: "Tilahune K.", rating: 4.5, role: "Discipleship Coach", experience: "3 years", sessions: "420", image: "/experts/life2.jpg", category: "Discipleship Coach" },
     
-    // Therapists
-    { id: 9, name: "Abenezer K..", rating: 4.7, role: "Therapist", experience: "5 years", sessions: "920", image: "/experts/therapist1.jpg", category: "Therapist" },
-    { id: 10, name: "Karan M.", rating: 4.9, role: "Therapist", experience: "8 years", sessions: "1600", image: "/experts/therapist2.jpg", category: "Therapist" },
+    // Prayer Intercessors
+    { id: 9, name: "Abenezer K..", rating: 4.7, role: "Prayer Intercessor", experience: "5 years", sessions: "920", image: "/experts/therapist1.jpg", category: "Prayer Intercessor" },
+    { id: 10, name: "Karan M.", rating: 4.9, role: "Prayer Intercessor", experience: "8 years", sessions: "1600", image: "/experts/therapist2.jpg", category: "Prayer Intercessor" },
     
-    // Positivity Coaches
-    { id: 11, name: "Mulat P.", rating: 4.8, role: "Positivity Coach", experience: "4 years", sessions: "680", image: "/experts/positivity1.jpg", category: "Positivity Coach" },
-    { id: 12, name: "Matyas A.", rating: 4.6, role: "Positivity Coach", experience: "2 years", sessions: "350", image: "/experts/positivity2.jpg", category: "Positivity Coach" },
+    // Encouragement Coaches
+    { id: 11, name: "Mulat P.", rating: 4.8, role: "Encouragement Coach", experience: "4 years", sessions: "680", image: "/experts/positivity1.jpg", category: "Encouragement Coach" },
+    { id: 12, name: "Matyas A.", rating: 4.6, role: "Encouragement Coach", experience: "2 years", sessions: "350", image: "/experts/positivity2.jpg", category: "Encouragement Coach" },
     
-    // Career Coaches
-    { id: 13, name: "Abenezer K..", rating: 4.7, role: "Career Coach", experience: "6 years", sessions: "1100", image: "/experts/career1.jpg", category: "Career Coach" },
-    { id: 14, name: "Ekrem S.", rating: 4.9, role: "Career Coach", experience: "9 years", sessions: "1950", image: "/experts/career2.jpg", category: "Career Coach" },
+    // Vocation Mentores
+    { id: 13, name: "Abenezer K..", rating: 4.7, role: "Vocation Mentor", experience: "6 years", sessions: "1100", image: "/experts/career1.jpg", category: "Vocation Mentor" },
+    { id: 14, name: "Ekrem S.", rating: 4.9, role: "Vocation Mentor", experience: "9 years", sessions: "1950", image: "/experts/career2.jpg", category: "Vocation Mentor" },
     
-    // Sexual Wellness Coaches
-    { id: 15, name: "Dr.Semere R.", rating: 4.8, role: "Sexual Wellness Coach", experience: "7 years", sessions: "1250", image: "/experts/sexual1.jpg", category: "Sexual Wellness Coach" },
-    { id: 16, name: "Aditya M.", rating: 4.5, role: "Sexual Wellness Coach", experience: "3 years", sessions: "480", image: "/experts/sexual2.jpg", category: "Sexual Wellness Coach" },
+    // Purity Mentores
+    { id: 15, name: "Dr.Semere R.", rating: 4.8, role: "Purity Mentor", experience: "7 years", sessions: "1250", image: "/experts/sexual1.jpg", category: "Purity Mentor" },
+    { id: 16, name: "Aditya M.", rating: 4.5, role: "Purity Mentor", experience: "3 years", sessions: "480", image: "/experts/sexual2.jpg", category: "Purity Mentor" },
     
-    // Mindset Transformation Coaches
-    { id: 17, name: "Tilela K.", rating: 4.9, role: "Mindset Transformation Coach", experience: "5 years", sessions: "980", image: "/experts/mindset1.jpg", category: "Mindset Transformation Coach" },
-    { id: 18, name: "Ahmed P.", rating: 4.7, role: "Mindset Transformation Coach", experience: "4 years", sessions: "720", image: "/experts/mindset2.jpg", category: "Mindset Transformation Coach" }
+    // Renewal Coaches
+    { id: 17, name: "Tilela K.", rating: 4.9, role: "Renewal Coach", experience: "5 years", sessions: "980", image: "/experts/mindset1.jpg", category: "Renewal Coach" },
+    { id: 18, name: "Ahmed P.", rating: 4.7, role: "Renewal Coach", experience: "4 years", sessions: "720", image: "/experts/mindset2.jpg", category: "Renewal Coach" }
   ]
 
   const [selectedCategory, setSelectedCategory] = useState("All")
@@ -80,8 +80,8 @@ export default function OurExperts() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-white mb-4">
-            A Qualified Panel Of Experts Dedicated<br />
-            <span className="text-fuchsia-400">To Helping You Feel Like A Whole</span>
+            A Caring Community of Spiritual Mentors Dedicated<br />
+            <span className="text-fuchsia-400">To Guiding Your Walk With Christ</span>
           </h2>
           
           <div className="flex flex-wrap justify-center gap-3 mt-6 max-w-3xl mx-auto">
@@ -89,7 +89,7 @@ export default function OurExperts() {
               onClick={() => filterExperts("All")}
               className={`inline-flex items-center gap-1 px-4 py-2 rounded-full text-sm transition-colors ${selectedCategory === "All" ? 'bg-fuchsia-600 text-white' : 'bg-zinc-800 text-zinc-200'}`}
             >
-              All Experts
+              All Mentors
             </button>
             
             {expertCategories.map((category, index) => (
@@ -134,8 +134,8 @@ export default function OurExperts() {
               
               <div className="space-y-2 text-center mb-6">
                 <p className="text-fuchsia-400 font-medium">{expert.role}</p>
-                <p className="text-zinc-300 text-sm">{expert.experience} of Experience</p>
-                <p className="text-zinc-300 text-sm">{expert.sessions} Sessions booked</p>
+                <p className="text-zinc-300 text-sm">{expert.experience} of Ministry</p>
+                <p className="text-zinc-300 text-sm">{expert.sessions} Mentorships</p>
               </div>
               
               <Link

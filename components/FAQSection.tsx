@@ -7,27 +7,27 @@ export function FAQSection() {
 
   const faqs = [
     {
-      question: "Can I share my personal stories and experiences on RiseUp?",
-      answer: "Absolutely! RiseUp encourages sharing personal stories and experiences in a safe, supportive environment. Your contributions help build our compassionate community."
+      question: "Can I share my personal stories and experiences on FaithConnect?",
+      answer: "Absolutely! FaithConnect encourages sharing personal stories and experiences in a safe, supportive environment. Your contributions help build our compassionate community."
     },
     {
-      question: "How can I connect with others on RiseUp?",
+      question: "How can I connect with others on FaithConnect?",
       answer: "You can connect by joining communities, participating in discussions, reacting to posts, and sending private messages (when both users have opted in)."
     },
     {
-      question: "Is RiseUp an app?",
-      answer: "Yes! RiseUp is available as both a mobile app (iOS and Android) and a web platform, so you can access support wherever you are."
+      question: "Is FaithConnect an app?",
+      answer: "Yes! FaithConnect is available as both a mobile app (iOS and Android) and a web platform, so you can access support wherever you are."
     },
     {
-      question: "Can I message other users privately on RiseUp?",
+      question: "Can I message other users privately on FaithConnect?",
       answer: "Private messaging is available when both users have enabled this feature in their privacy settings, ensuring comfortable communication for everyone."
     },
     {
-      question: "How can I find relevant discussions and communities on RiseUp?",
+      question: "How can I find relevant discussions and communities on FaithConnect?",
       answer: "Use our discovery tools - browse by topics, search keywords, or explore recommended communities based on your interests and needs."
     },
     {
-      question: "Is there a limit to the number of posts I can make on RiseUp?",
+      question: "Is there a limit to the number of posts I can make on FaithConnect?",
       answer: "No strict limits exist, but we encourage meaningful engagement. Our moderation team may reach out if they notice unusually high activity to ensure you're getting the support you need."
     },
     {
@@ -35,16 +35,16 @@ export function FAQSection() {
       answer: "You can react with emojis, leave thoughtful comments, share resources, or use our 'Support' button to send direct words of encouragement."
     },
     {
-      question: "Are there any age restrictions for using RiseUp?",
-      answer: "Yes, you must be at least 13 years old to use RiseUp. Some communities may have higher age requirements based on their content."
+      question: "Are there any age restrictions for using FaithConnect?",
+      answer: "Yes, you must be at least 13 years old to use FaithConnect. Some communities may have higher age requirements based on their content."
     },
     {
-      question: "Is there a moderation team that ensures the safety of users on RiseUp?",
+      question: "Is there a moderation team that ensures the safety of users on FaithConnect?",
       answer: "Absolutely. Our 24/7 moderation team and AI systems work together to maintain a safe space. You can also report any concerns directly through the app."
     },
     {
-      question: "Can I talk on RiseUp in multiple languages?",
-      answer: "Yes! RiseUp supports multiple languages. While English is primary, many communities welcome posts in other languages - look for language-specific groups."
+      question: "Can I talk on FaithConnect in multiple languages?",
+      answer: "Yes! FaithConnect supports multiple languages. While English is primary, many communities welcome posts in other languages - look for language-specific groups."
     }
   ]
 

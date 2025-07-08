@@ -65,10 +65,10 @@ export default function TalkToExperts() {
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-3xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-fuchsia-300 bg-clip-text text-transparent animate-fade-in">
-            Talk to Verified Mental Health Experts
+            Connect with Trusted Spiritual Mentors
           </h1>
           <p className="text-lg md:text-xl text-zinc-300 max-w-3xl mx-auto mb-8 animate-fade-in-delayed">
-            Connect with licensed therapists, psychologists, counselors, and coaches who can help you navigate life's challenges.
+            Meet prayerful mentors, pastors, and discipleship coaches ready to guide your walk with Christ.
           </p>
           
           {/* Search Bar */}
@@ -80,15 +80,15 @@ export default function TalkToExperts() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 max-w-3xl mx-auto pt-6 border-t border-zinc-800 animate-slide-up-delayed">
             <div className="flex flex-col items-center">
               <span className="text-2xl md:text-3xl font-bold text-white mb-1">500+</span>
-              <span className="text-sm text-zinc-400">Verified Experts</span>
+              <span className="text-sm text-zinc-400">Spiritual Mentors</span>
             </div>
             <div className="flex flex-col items-center">
               <span className="text-2xl md:text-3xl font-bold text-white mb-1">24/7</span>
-              <span className="text-sm text-zinc-400">Availability</span>
+              <span className="text-sm text-zinc-400">Prayer Support</span>
             </div>
             <div className="flex flex-col items-center">
               <span className="text-2xl md:text-3xl font-bold text-white mb-1">15k+</span>
-              <span className="text-sm text-zinc-400">Sessions Completed</span>
+              <span className="text-sm text-zinc-400">Mentorship Sessions</span>
             </div>
             <div className="flex flex-col items-center">
               <span className="text-2xl md:text-3xl font-bold text-white mb-1">4.8/5</span>

@@ -2,7 +2,7 @@ import { allTopics } from "@/data/topics"
 import { TopicsGrid } from "@/components/topics-grid"
 
 export const metadata = {
-  title: "Mental Health Topics | RiseUp Therapy",
+  title: "Mental Health Topics | FaithConnect Therapy",
   description: "Explore our comprehensive collection of mental health, therapy, and coaching topics.",
 }
 

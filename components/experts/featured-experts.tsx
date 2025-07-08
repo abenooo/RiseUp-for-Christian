@@ -51,8 +51,8 @@ export default function FeaturedExperts() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center mb-8">
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">Featured Experts</h2>
-            <p className="text-zinc-400">Top-rated professionals ready to help</p>
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">Featured Mentors</h2>
+            <p className="text-zinc-400">Faith-filled mentors ready to pray with you</p>
           </div>
           
           <div className="hidden md:flex items-center gap-4">
@@ -87,7 +87,7 @@ export default function FeaturedExperts() {
         <div className="md:hidden mb-4">
           <Link href="/talk-to-experts">
             <Button variant="link" className="text-fuchsia-400 hover:text-fuchsia-300 px-0">
-              View All Experts
+              View All Mentors
               <ArrowRight className="ml-1 h-4 w-4" />
             </Button>
           </Link>

@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
 import Image from "next/image"
 import { MessageCircle } from "lucide-react"
-import Hero from "../public/Hero-img.png"
+
 import Link from "next/link"
 
 export default function Home() {
@@ -14,29 +14,28 @@ export default function Home() {
           <div className="space-y-8">
             <div className="space-y-2">
               <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-[#1A1A1A]">
-                Build A Holistic Lifestyle
+                Deepen Your Spiritual Journey
               </h1>
-              <h2 className="text-2xl md:text-3xl font-semibold text-[#1A1A1A]">With RiseUp Therapy</h2>
+              <h2 className="text-2xl md:text-3xl font-semibold text-[#1A1A1A]">with FaithConnect</h2>
             </div>
 
             <ul className="space-y-6">
               <li className="flex items-start">
                 <span className="text-[#F97E5A] text-3xl mr-4 mt-1">•</span>
                 <p className="text-lg text-[#4A4A4A]">
-                  Understand yourself in ways you never thought you would by talking to industry professionals.
+                  Grow closer to God each day through guided devotionals and prayer prompts.
                 </p>
               </li>
               <li className="flex items-start">
                 <span className="text-[#F97E5A] text-3xl mr-4 mt-1">•</span>
                 <p className="text-lg text-[#4A4A4A]">
-                  Get 24x7 online support, whether it is in the middle of a hectic workday or when you can't sleep at
-                  night.
+                  Receive 24/7 encouragement from Grace, your AI prayer partner—anytime you need it.
                 </p>
               </li>
               <li className="flex items-start">
                 <span className="text-[#F97E5A] text-3xl mr-4 mt-1">•</span>
                 <p className="text-lg text-[#4A4A4A]">
-                  Our experts are simply a click away; connect with them anytime, anyday.
+                  Connect instantly with caring spiritual mentors whenever you seek guidance.
                 </p>
               </li>
             </ul>
@@ -46,7 +45,7 @@ export default function Home() {
               className="text-lg bg-fuchsia-400 text-white hover:bg-fuchsia-500 rounded-md px-6 py-6 h-auto flex items-center gap-2"
             >
               <MessageCircle size={20} />
-              Chat with us
+              Pray with Grace
             </Button>
           </div>
 
@@ -55,8 +54,8 @@ export default function Home() {
             {/* Circular Image Container */}
             <div className="relative w-[280px] h-[280px] md:w-[350px] md:h-[350px] rounded-full overflow-hidden border-4 border-white shadow-xl z-10">
               <Image
-                src={Hero || "/placeholder.svg"}
-                alt="Person feeling better after therapy"
+                src={"/Hero-img.png"}
+                alt="Believer finding peace through prayer"
                 fill
                 sizes="(max-width: 768px) 280px, 350px"
                 className="object-cover object-center"
@@ -70,10 +69,10 @@ export default function Home() {
               <div className="relative">
                 <div className="bg-white p-3 rounded-xl shadow-md w-full">
                   <div className="flex items-center gap-2 mb-2">
-                    <div className="text-xs text-gray-500">3am Thoughts</div>
-                    <div className="text-xs bg-yellow-100 text-gray-500 px-2 py-0.5 rounded-full">Happy</div>
+                    <div className="text-xs text-gray-500">Daily Prayer</div>
+                    <div className="text-xs bg-yellow-100 text-gray-500 px-2 py-0.5 rounded-full">Blessed</div>
                   </div>
-                  <p className="text-sm text-gray-500 font-medium">I feel better after therapy...</p>
+                  <p className="text-sm text-gray-500 font-medium">My heart feels light after prayer...</p>
                   <div className="flex items-center gap-1 mt-2">
                     <span>🧡</span>
                     <span>🤗</span>
@@ -161,11 +160,10 @@ export default function Home() {
 
         <div className="max-w-4xl mx-auto text-center space-y-6">
           <h3 className="text-3xl font-semibold flex items-center justify-center gap-3">
-            <Link href="/" className="text-fuchsia-400">Why RiseUp?</Link>
+            <Link href="/" className="text-fuchsia-400">Why FaithConnect?</Link>
           </h3>
           <p className="text-lg text-[#4A4A4A] max-w-3xl mx-auto">
-            A therapeutic relationship is built on trust and confidence. At RiseUp, we provide you with the right expert
-            who can help you feel safe and comfortable in your mental health journey.
+            A therapeutic relationship is built on trust and confidence. At FaithConnect, we connect you with trusted spiritual mentors who help you grow in your faith journey.
           </p>
         </div>
       </div>

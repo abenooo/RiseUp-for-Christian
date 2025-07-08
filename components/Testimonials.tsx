@@ -68,7 +68,7 @@ export default function Testimonials() {
     <section className="py-16 bg-zinc-900">
       <div className="">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-white mb-4">Client Testimonials</h2>
+          <h2 className="text-4xl font-bold text-white mb-4">Faith Stories & Testimonies</h2>
           <p className="text-xl text-zinc-300 max-w-3xl mx-auto">
             You don't have to take our word for it. Read testimonials from users who transformed themselves with our guidance.
           </p>

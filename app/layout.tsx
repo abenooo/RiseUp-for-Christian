@@ -8,9 +8,9 @@ import Footer from "@/components/Footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "RiseUp - Your Anonymous Hub for Addiction Recovery",
+  title: "FaithConnect - Your Anonymous Hub for Addiction Recovery",
   description:
-    "RiseUp is your anonymous hub to overcome addiction. Chat, share, and earn points from community votes. Together, we heal.",
+    "FaithConnect is your anonymous hub to overcome addiction. Chat, share, and earn points from community votes. Together, we heal.",
     generator: 'v0.dev'
 }
 

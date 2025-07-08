@@ -16,13 +16,13 @@ export async function generateMetadata({ params }: TopicPageProps) {
 
   if (!topic) {
     return {
-      title: "Topic Not Found | RiseUp Therapy",
+      title: "Topic Not Found | FaithConnect Therapy",
       description: "The requested topic could not be found.",
     }
   }
 
   return {
-    title: `${topic.title} | RiseUp Therapy`,
+    title: `${topic.title} | FaithConnect Therapy`,
     description: topic.description,
   }
 }
@@ -87,7 +87,7 @@ export default async function TopicPage({ params }: TopicPageProps) {
 
           <h2>How We Can Help</h2>
           <p>
-            At RiseUp Therapy, we offer specialized support for individuals dealing with {topic.title.toLowerCase()}.
+            At FaithConnect Therapy, we offer specialized support for individuals dealing with {topic.title.toLowerCase()}.
             Our experienced therapists and coaches use evidence-based approaches to help you develop coping strategies,
             build resilience, and improve your overall well-being.
           </p>
