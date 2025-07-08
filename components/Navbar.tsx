@@ -66,7 +66,7 @@ function Navbar() {
   }, [mobileMenuOpen]);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 flex justify-center bg-black py-2 sm:py-4 md:py-6">
+    <header className="w-full flex justify-center bg-black py-2 sm:py-4 md:py-6 relative z-50">
       <div className="w-full max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 md:px-8 py-2 sm:py-3 bg-zinc-900/80 border border-zinc-800 rounded-full shadow-lg backdrop-blur-md">
         {/* Logo */}
         <div className="flex items-center gap-1 sm:gap-2 z-50">
